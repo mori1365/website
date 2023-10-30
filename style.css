@@ -1,0 +1,109 @@
+@import url('https://v1.fontapi.ir/css/MikhakFD:600;900');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family: Mikhak FD, sans-serif;
+    padding: 10px 3%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 1001;
+    width: 100%;
+    position: relative;
+    height: 300px;
+}
+.logo{
+    width: 85px;
+}
+.logo >img{
+    width: 100%;
+}
+.menu{
+    display:block;
+    height: 3px;
+    width: 25px;
+    background-color:#59096d;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.menu:hover{
+    rotate: 180deg;
+}
+.clos{
+    display: none;
+    transition: all 0.6s;
+}
+.close{
+    display:block;
+    height: 3px;
+    width: 25px;
+    background-color:#59096d;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all 0.6s;
+    rotate: 45deg;
+}
+.close:nth-child(1){
+    rotate: -45deg;
+    top: 10px;
+    position: absolute;
+}
+.navbar{
+    position: absolute;
+        display: block;
+        right: -100%;
+        transition: all .9s;
+        text-align: center;
+        z-index: 10000;
+        height: 300px;
+        top: 8%;
+        width: 100%;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    display: block;
+    text-decoration: none;
+    color: #59096d;
+    font-family: Mikhak FD, sans-serif;
+    font-weight: 900;
+    padding: 10px;
+    text-align: center;
+    transition: all .9s;
+}
+.navbar li:hover a{
+    color: #ffffff;
+    background-color: #59096d;
+}
+.container{
+    background-color: aqua;
+    width: 80%;
+    height: 600px;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 10%;
+    display:flex;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: -10%;
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.7s;text-align: center;
+    top: 20%;
+
+
+}
+.sun:hover{
+    translate: 100px;
+}
